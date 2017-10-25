@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>SET THE TITLE!!!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
 	<!--Might be good to link bootstrap here-->
 </head>
+
 <body>
 	<!--write html below this line-->
-	
-	
+	<div class="container text-center">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h1 class="panel-title">Paper-Rock-Scissors!</h1>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="thumbnail">
+							<div class="caption">
+								<h1>Player</h1>
+							</div>
+							<div id="image-left">
+								<img src="assets/img/question-mark.jpeg" alt="" width="300px" height="300px">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<h2>VS.</h2>
+					</div>
+					<div class="col-sm-5">
+						<div class="thumbnail">
+							<div class="caption">
+								<h1>Computer</h1>
+							</div>
+							<div id="image-right">
+								<img src="assets/img/question-mark.jpeg" alt="" width="300px" height="300px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" id="winner-box">
+				<h2 class="panel-title">Choose Wisely!</h2>
+			</div>
+			<div class="panel-body">
+				<!-- 0 = Paper - 1 = Rock - 2 = Scissors -->
+				<button onclick="play(0)">Throw Paper!</button>
+				<button onclick="play(1)">Throw Rock!</button>
+				<button onclick="play(2)">Throw Scissors!</button>
+			</div>
+		</div>
+	</div>
+
+
+
 	<!--write html above this line-->
 	<!--the following line is used to link your javascript file.-->
 	<script src="app.js"></script>
 </body>
+
 </html>
